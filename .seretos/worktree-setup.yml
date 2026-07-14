@@ -1,5 +1,5 @@
-main:
-  start:
-    - powershell -NoProfile -NoLogo -Command "$env:MCP_WORKTREE_TEST_MOCK_APP=1; while($true){Start-Sleep -Seconds 5}"
-  stop:
-    - powershell -NoProfile -NoLogo -Command "Add-Content -Path stop-marker.log -Value 'stop-ran'"
+start:
+  - name: default
+    command: [this is not: valid yaml at all
+      - broken indentation
+   stop
