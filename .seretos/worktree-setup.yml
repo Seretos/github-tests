@@ -1,0 +1,6 @@
+start:
+  - name: default
+    command: powershell -NoProfile -NoLogo -Command "$env:MCP_WORKTREE_TEST_MOCK_APP=1; while($true){Start-Sleep -Seconds 5}"
+stop:
+  - name: default
+    command: powershell -NoProfile -NoLogo -Command "Add-Content -Path stop-marker.log -Value 'stop-ran'"
